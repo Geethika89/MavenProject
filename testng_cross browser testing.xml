@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="ChromeTest" verbose="5">
+   <parameter name = "browser"  value="chrome"> </parameter>
+    <parameter name = "url"  value = "http://leaftaps.com/opentaps/control/main"> </parameter>
+<parameter name ="username"  value = "demosalesmanager"></parameter>
+<parameter name = "password" value = "crmsfa"></parameter>
+    <classes>
+      <class name="TestLeaf.CreateLead"/>
+    <!--   <class name="TestLeaf.DuplicateLead"/>
+      <class name="TestLeaf.DeleteLead"/>
+      <class name="TestLeaf.EditLead"/>
+      <class name="TestLeaf.MergeLead"/> -->
+    </classes>
+  </test> <!-- Test -->
+  
+ <test thread-count="5" name="FirefoxTest" verbose="5">
+
+   <parameter name = "browser"  value="firefox"> </parameter>
+     <parameter name = "url"  value = "http://leaftaps.com/opentaps/control/main"> </parameter>
+<parameter name ="username"  value = "demosalesmanager"></parameter>
+<parameter name = "password" value = "crmsfa"></parameter>
+    <classes>
+    <class name="TestLeaf.CreateLead"/>
+   <!--    <class name="TestLeaf.DuplicateLead"/>
+      <class name="TestLeaf.DeleteLead"/>
+      <class name="TestLeaf.EditLead"/>
+      <class name="TestLeaf.MergeLead"/> -->
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="EdgeTest" verbose="5">
+
+   <parameter name = "browser"  value="edge"> </parameter>
+     <parameter name = "url"  value = "http://leaftaps.com/opentaps/control/main"> </parameter>
+<parameter name ="username"  value = "demosalesmanager"></parameter>
+<parameter name = "password" value = "crmsfa"></parameter>
+    <classes>
+      <class name="TestLeaf.CreateLead"/>
+   <!--    <class name="TestLeaf.DuplicateLead"/>
+      <class name="TestLeaf.DeleteLead"/>
+      <class name="TestLeaf.EditLead"/>
+      <class name="TestLeaf.MergeLead"/> -->
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

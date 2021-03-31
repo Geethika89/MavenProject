@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="testng.day3.RetryListner" ></listener>
+</listeners>
+  <test thread-count="5" name="testng_retry">
+  <classes>
+ <!--  <class name = "TestLeaf.CreateLead"></class> -->
+  <class name = "testng.day3.TestExample"/>
+  </classes>
+  
+  </test> <!-- testng_retry -->
+</suite> <!-- Suite -->
